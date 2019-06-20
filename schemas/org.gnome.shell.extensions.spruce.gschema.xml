@@ -1,0 +1,16 @@
+<schemalist>
+  <schema id="org.gnome.shell.extensions.spruce" path="/org/gnome/shell/extensions/spruce/">
+    <key type="as" name="left">
+        <default><![CDATA[['<Super><Alt>H']]]></default>
+      <summary>Key to move active window to the left side of the screen</summary>
+    </key>
+    <key type="as" name="right">
+        <default><![CDATA[['<Super><Alt>L']]]></default>
+      <summary>Key to move active window to the right side of the screen</summary>
+    </key>
+    <key type="as" name="center">
+        <default><![CDATA[['<Super><Alt>C']]]></default>
+      <summary>Key to move active window to the center of the screen</summary>
+    </key>
+  </schema>
+</schemalist>

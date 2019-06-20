@@ -1,0 +1,7 @@
+{
+    "name": "Spruce",
+    "description": "Easily arrange windows",
+    "uuid": "spruce@paysonwallach.com",
+    "settings-schema": "org.gnome.shell.extensions.spruce",
+    "shell-version": ["3.32.2"]
+}
