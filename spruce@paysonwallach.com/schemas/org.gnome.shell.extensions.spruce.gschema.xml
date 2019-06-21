@@ -2,7 +2,7 @@
   <schema id="org.gnome.shell.extensions.spruce" path="/org/gnome/shell/extensions/spruce/">
     <key type="as" name="top">
       <default>
-        <![CDATA[['<Super><Alt>J']]]>
+        <![CDATA[['<Ctrl><Alt>J']]]>
       </default>
       <summary>Key to move the active window to fill the top half of the screen</summary>
     </key>
@@ -14,7 +14,7 @@
     </key>
     <key type="as" name="right">
       <default>
-        <![CDATA[['<Super><Alt>L']]]>
+        <![CDATA[['<Ctrl><Alt>L']]]>
       </default>
       <summary>Key to move the active window to fill the right half of the screen</summary>
     </key>
@@ -26,7 +26,7 @@
     </key>
     <key type="as" name="bottom">
       <default>
-        <![CDATA[['<Super><Alt>K']]]>
+        <![CDATA[['<Ctrl><Alt>K']]]>
       </default>
       <summary>Key to move the active window to fill the bottom half of the screen</summary>
     </key>
@@ -38,7 +38,7 @@
     </key>
     <key type="as" name="left">
       <default>
-        <![CDATA[['<Super><Alt>H']]]>
+        <![CDATA[['<Ctrl><Alt>H']]]>
       </default>
       <summary>Key to move the active window to fill the left half of the screen</summary>
     </key>
@@ -50,25 +50,25 @@
     </key>
     <key type="as" name="center">
       <default>
-        <![CDATA[['<Super><Alt>C']]]>
+        <![CDATA[['<Ctrl><Alt>C']]]>
       </default>
       <summary>Key to move the active window to the center of the screen</summary>
     </key>
     <key type="as" name="maximize">
       <default>
-        <![CDATA[['<Super><Alt>F']]]>
+        <![CDATA[['<Shift><Ctrl><Alt>F']]]>
       </default>
       <summary>Key to maximize the active window</summary>
     </key>
     <key type="as" name="left-display">
       <default>
-        <![CDATA[['<Shift><Super><Alt>H']]]>
+        <![CDATA[['<Shift><Ctrl><Alt>H']]]>
       </default>
       <summary>Key to move the active window to the display left of the active display</summary>
     </key>
     <key type="as" name="right-display">
       <default>
-        <![CDATA[['<Shift><Super><Alt>L']]]>
+        <![CDATA[['<Shift><Ctrl><Alt>L']]]>
       </default>
       <summary>Key to move the active window to the display right of the active display</summary>
     </key>

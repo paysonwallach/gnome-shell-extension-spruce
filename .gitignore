@@ -1,6 +1,6 @@
 # Distribution / Packaging
+dist/
 gschemas.compiled
-*.zip
 
 # Translations
 *.mo
