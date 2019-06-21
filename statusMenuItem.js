@@ -28,30 +28,30 @@ const StatusMenuItem = class StatusMenuItem {
     this.button = new PanelMenu.Button(0, "spruce-menu", false);
 
     let box = new St.BoxLayout();
-    let gIcon = Gio.icon_new_for_string(
-      spruce.path +
-        "/icons/spruce.svg"
-    );
-    let icon = new St.Icon({ gicon: gIcon, style_class: "system-status-icon" });
+    let gIcon = Gio.icon_new_for_string(spruce.path + "/icons/spruce.svg");
+    let icon = new St.Icon({
+      gicon: gIcon,
+      style_class: "system-status-icon"
+    });
 
     box.add(icon);
     this.button.actor.add_child(box);
 
     for (const position of positions) {
-        let handler = function() {
-            Util.spawn(["arrange", position]);
-        };
-        let menuItem = new PopupMenu.PopupMenuItem(position.capitalize());
+      let handler = function() {
+        Util.spawn(["arrange", position]);
+      };
+      let menuItem = new PopupMenu.PopupMenuItem(_(position));
 
-        menuItem.connect("activate", Lang.bind(this, handler));
-        this.button.menu.addMenuItem(menuItem);
-        Main.wm.addKeybinding(
-          position,
-          settings,
-          Meta.KeyBindingFlags.NONE,
-          Shell.ActionMode.NORMAL,
-          handler
-        );
+      menuItem.connect("activate", Lang.bind(this, handler));
+      this.button.menu.addMenuItem(menuItem);
+      Main.wm.addKeybinding(
+        position,
+        settings,
+        Meta.KeyBindingFlags.NONE,
+        Shell.ActionMode.NORMAL,
+        handler
+      );
     }
   }
 
