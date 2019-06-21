@@ -1,0 +1,7 @@
+# Distribution / Packaging
+gschemas.compiled
+*.zip
+
+# Translations
+*.mo
+*.pot

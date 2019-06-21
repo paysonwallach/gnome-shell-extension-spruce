@@ -25,4 +25,5 @@ function enable() {
 
 function disable() {
   statusMenuItem.disable();
+  statusMenuItem = null;
 }
