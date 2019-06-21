@@ -46,7 +46,7 @@ const StatusMenuItem = class StatusMenuItem {
 
     for (const position of positions) {
       let handler = function() {
-        Util.spawn(["arrange", position]);
+        Util.spawn(["tidy", position]);
       };
       let menuItem = new PopupMenu.PopupMenuItem(_(position));
 
