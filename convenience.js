@@ -67,11 +67,13 @@ function getSettings(schema) {
   if (!schemaObj)
     throw new Error(
       "Schema " +
-        schema +
-        " could not be found for extension " +
-        spruce.metadata.uuid +
-        ". Please check your installation."
+      schema +
+      " could not be found for extension " +
+      spruce.metadata.uuid +
+      ". Please check your installation."
     );
 
-  return new Gio.Settings({ settings_schema: schemaObj });
+  return new Gio.Settings({
+    settings_schema: schemaObj
+  });
 }

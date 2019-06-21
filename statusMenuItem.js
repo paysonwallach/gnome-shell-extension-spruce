@@ -7,20 +7,27 @@
  * (https://gnu.org/licenses/gpl.html)
  */
 
-const St = imports.gi.St;
-const Gio = imports.gi.Gio;
 const Lang = imports.lang;
-const Main = imports.ui.main;
+
+const Gio = imports.gi.Gio;
 const Meta = imports.gi.Meta;
+const Shell = imports.gi.Shell;
+const St = imports.gi.St;
+
+const Main = imports.ui.main;
 const PanelMenu = imports.ui.panelMenu;
 const PopupMenu = imports.ui.popupMenu;
-const Shell = imports.gi.Shell;
+
 const Util = imports.misc.util;
 
+const Gettext = imports.gettext.domain(spruce.metadata["gettext-domain"]);
+const _ = Gettext.gettext;
+
 const settings = spruce.imports.convenience.getSettings();
+
 const positions = ["top", "top-right", "right", "bottom-right", "bottom",
-                   "bottom-left", "left", "top-left", "left-display",
-                   "right-display", "maximize", "center"];
+                   "bottom-left", "left", "top-left", "center", "maximize",
+                   "left-display", "right-display"];
 
 
 const StatusMenuItem = class StatusMenuItem {

@@ -1,16 +1,76 @@
 <schemalist>
   <schema id="org.gnome.shell.extensions.spruce" path="/org/gnome/shell/extensions/spruce/">
-    <key type="as" name="left">
-        <default><![CDATA[['<Super><Alt>H']]]></default>
-      <summary>Key to move active window to the left side of the screen</summary>
+    <key type="as" name="top">
+      <default>
+        <![CDATA[['<Super><Alt>J']]]>
+      </default>
+      <summary>Key to move the active window to fill the top half of the screen</summary>
+    </key>
+    <key type="as" name="top-right">
+      <default>
+        <![CDATA[['<Ctrl><Alt><Super>J']]]>
+      </default>
+      <summary>Key to move the active window to fill the top-right quarter of the screen</summary>
     </key>
     <key type="as" name="right">
-        <default><![CDATA[['<Super><Alt>L']]]></default>
-      <summary>Key to move active window to the right side of the screen</summary>
+      <default>
+        <![CDATA[['<Super><Alt>L']]]>
+      </default>
+      <summary>Key to move the active window to fill the right half of the screen</summary>
+    </key>
+    <key type="as" name="bottom-right">
+      <default>
+        <![CDATA[['<Ctrl><Alt><Super>L']]]>
+      </default>
+      <summary>Key to move the active window to fill the bottom-right quarter of the screen</summary>
+    </key>
+    <key type="as" name="bottom">
+      <default>
+        <![CDATA[['<Super><Alt>K']]]>
+      </default>
+      <summary>Key to move the active window to fill the bottom half of the screen</summary>
+    </key>
+    <key type="as" name="bottom-left">
+      <default>
+        <![CDATA[['<Ctrl><Alt><Super>K']]]>
+      </default>
+      <summary>Key to move the active window to fill the bottom-left quarter of the screen</summary>
+    </key>
+    <key type="as" name="left">
+      <default>
+        <![CDATA[['<Super><Alt>H']]]>
+      </default>
+      <summary>Key to move the active window to fill the left half of the screen</summary>
+    </key>
+    <key type="as" name="top-left">
+      <default>
+        <![CDATA[['<Ctrl><Alt><Super>H']]]>
+      </default>
+      <summary>Key to move the active window to fill the top-left quarter of the screen</summary>
     </key>
     <key type="as" name="center">
-        <default><![CDATA[['<Super><Alt>C']]]></default>
-      <summary>Key to move active window to the center of the screen</summary>
+      <default>
+        <![CDATA[['<Super><Alt>C']]]>
+      </default>
+      <summary>Key to move the active window to the center of the screen</summary>
+    </key>
+    <key type="as" name="maximize">
+      <default>
+        <![CDATA[['<Super><Alt>F']]]>
+      </default>
+      <summary>Key to maximize the active window</summary>
+    </key>
+    <key type="as" name="left-display">
+      <default>
+        <![CDATA[['<Shift><Super><Alt>H']]]>
+      </default>
+      <summary>Key to move the active window to the display left of the active display</summary>
+    </key>
+    <key type="as" name="right-display">
+      <default>
+        <![CDATA[['<Shift><Super><Alt>L']]]>
+      </default>
+      <summary>Key to move the active window to the display right of the active display</summary>
     </key>
   </schema>
 </schemalist>
