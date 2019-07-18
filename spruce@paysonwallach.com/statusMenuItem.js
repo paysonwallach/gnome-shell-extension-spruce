@@ -7,8 +7,6 @@
  * (https://gnu.org/licenses/gpl.html)
  */
 
-const Lang = imports.lang;
-
 const Gio = imports.gi.Gio;
 const Meta = imports.gi.Meta;
 const Shell = imports.gi.Shell;
@@ -53,7 +51,7 @@ const StatusMenuItem = class StatusMenuItem {
       };
       let menuItem = new PopupMenu.PopupMenuItem(_(position));
 
-      menuItem.connect("activate", Lang.bind(this, handler));
+      menuItem.connect("activate", handler);
       this.button.menu.addMenuItem(menuItem);
       Main.wm.addKeybinding(
         position,
@@ -63,9 +61,7 @@ const StatusMenuItem = class StatusMenuItem {
         handler
       );
     }
-  }
 
-  enable() {
     Main.panel.addToStatusArea("spruce-menu", this.button, 0, "right");
   }
 
