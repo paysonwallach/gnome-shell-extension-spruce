@@ -31,18 +31,21 @@ const positions = ["top", "top-right", "right", "bottom-right", "bottom",
 
 
 const StatusMenuItem = class StatusMenuItem {
-  constructor() {
-    this.button = new PanelMenu.Button(0, "spruce-menu", false);
+  constructor() { }
 
-    let box = new St.BoxLayout();
-    let gIcon = Gio.icon_new_for_string(spruce.path + "/icons/spruce.svg");
-    let icon = new St.Icon({
+  enable() {
+    this.button = new PanelMenu.Button(0,
+                                       spruce.metadata["name"],
+                                       false);
+
+    const gIcon = Gio.icon_new_for_string(spruce.path + "/icons/spruce-symbolic.svg");
+    const icon = new St.Icon({
       gicon: gIcon,
       style_class: "system-status-icon"
     });
 
-    box.add(icon);
-    this.button.actor.add_child(box);
+    this.button.add_child(icon);
+    this.button.add_style_class_name("panel-status-button");
 
     for (const position of positions) {
       let handler = function() {
