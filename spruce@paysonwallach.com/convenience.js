@@ -19,7 +19,7 @@ const Config = imports.misc.config;
  * @domain: (optional): the gettext domain to use
  *
  * Initialize Gettext to load translations from extensionsdir/locale.
- * If @domain is not provided, it will be taken from metadata['gettext-domain']
+ * If @domain is not provided, it will be taken from metadata["gettext-domain"]
  */
 function initTranslations(domain) {
   domain = domain || spruce.metadata["gettext-domain"];
@@ -41,7 +41,7 @@ function initTranslations(domain) {
  *
  * Builds and return a GSettings schema for @schema, using schema files
  * in sprucesdir/schemas. If @schema is not provided, it is taken from
- * metadata['settings-schema'].
+ * metadata["settings-schema"].
  */
 function getSettings(schema) {
   schema = schema || spruce.metadata["settings-schema"];
