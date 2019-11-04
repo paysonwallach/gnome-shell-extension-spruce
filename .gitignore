@@ -1,5 +1,5 @@
 # Distribution / Packaging
-dist/
+build/
 gschemas.compiled
 
 # Translations
