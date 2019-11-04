@@ -9,13 +9,16 @@
 
 window.spruce = imports.misc.extensionUtils.getCurrentExtension();
 
-const Convenience = spruce.imports.convenience;
-const { StatusMenuItem } = spruce.imports.statusMenuItem;
+const ExtensionUtils = imports.misc.extensionUtils;
+
+const {StatusMenuItem} = spruce.imports.statusMenuItem;
+const {registerResources} = spruce.imports.convenience;
 
 let statusMenuItem;
 
 function init() {
-  Convenience.initTranslations();
+  ExtensionUtils.initTranslations();
+  registerResources();
 }
 
 function enable() {

@@ -1,0 +1,100 @@
+<schemalist>
+  <schema id="org.gnome.shell.extensions.spruce" path="/org/gnome/shell/extensions/spruce/">
+    <key type="as" name="move-resize-top-half">
+      <default>
+        <![CDATA[['<Ctrl><Alt>Up']]]>
+      </default>
+      <summary>Key to move the active window to fill the top half of the screen</summary>
+    </key>
+    <key type="as" name="move-resize-upper-right">
+      <default>
+        <![CDATA[['<Alt><Super>Right']]]>
+      </default>
+      <summary>Key to move the active window to fill the top-right quarter of the screen</summary>
+    </key>
+    <key type="as" name="move-resize-right-half">
+      <default>
+        <![CDATA[['<Ctrl><Alt>Right']]]>
+      </default>
+      <summary>Key to move the active window to fill the right half of the screen</summary>
+    </key>
+    <key type="as" name="move-resize-lower-right">
+      <default>
+        <![CDATA[['<Shift><Alt><Super>Right']]]>
+      </default>
+      <summary>Key to move the active window to fill the bottom-right quarter of the screen</summary>
+    </key>
+    <key type="as" name="move-resize-bottom-half">
+      <default>
+        <![CDATA[['<Ctrl><Alt>Down']]]>
+      </default>
+      <summary>Key to move the active window to fill the bottom half of the screen</summary>
+    </key>
+    <key type="as" name="move-resize-lower-left">
+      <default>
+        <![CDATA[['<Shift><Alt><Super>Left']]]>
+      </default>
+      <summary>Key to move the active window to fill the bottom-left quarter of the screen</summary>
+    </key>
+    <key type="as" name="move-resize-left-half">
+      <default>
+        <![CDATA[['<Ctrl><Alt>Left']]]>
+      </default>
+      <summary>Key to move the active window to fill the left half of the screen</summary>
+    </key>
+    <key type="as" name="move-resize-upper-left">
+      <default>
+        <![CDATA[['<Alt><Super>Left']]]>
+      </default>
+      <summary>Key to move the active window to fill the top-left quarter of the screen</summary>
+    </key>
+    <key type="as" name="move-center">
+      <default>
+        <![CDATA[['<Ctrl><Alt>C']]]>
+      </default>
+      <summary>Key to move the active window to the center of the screen</summary>
+    </key>
+    <key type="as" name="resize-fullscreen">
+      <default>
+        <![CDATA[['<Ctrl><Alt>F']]]>
+      </default>
+      <summary>Key to maximize the active window</summary>
+    </key>
+    <key type="as" name="move-previous-display">
+      <default>
+        <![CDATA[['<Shift><Ctrl><Alt>Left']]]>
+      </default>
+      <summary>Key to move the active window to the display left of the active display</summary>
+    </key>
+    <key type="as" name="move-next-display">
+      <default>
+        <![CDATA[['<Shift><Ctrl><Alt>Right']]]>
+      </default>
+      <summary>Key to move the active window to the display right of the active display</summary>
+    </key>
+    <key type="as" name="move-resize-next-third">
+      <default>
+        <![CDATA[['<Ctrl><Super>Left']]]>
+      </default>
+      <summary>Key to move the active window to the next third portion of the screen</summary>
+    </key>
+    <key type="as" name="move-resize-previous-third">
+      <default>
+        <![CDATA[['<Ctrl><Super>Right']]]>
+      </default>
+      <summary>Key to move the active window to the previous third portion of the screen</summary>
+    </key>
+    <key type="as" name="resize-larger">
+      <default>
+        <![CDATA[['<Ctrl><Alt><Super>Up']]]>
+      </default>
+      <summary>Key to increase the size of the active window</summary>
+    </key>
+    <key type="as" name="resize-smaller">
+      <default>
+        <![CDATA[['<Ctrl><Alt><Super>Down']]]>
+      </default>
+      <summary>Key to decrease the size of the active window</summary>
+    </key>
+  </schema>
+</schemalist>
