@@ -1,0 +1,64 @@
+#
+# Spruce
+#
+# Copyright (c) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+#
+# Released under the terms of the GNU General Public License, version 3
+# (https://gnu.org/licenses/gpl.html)
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+
+msgid ""
+msgstr ""
+"Project-Id-Version: org.gnome.shell.extensions.spruce\n"
+"POT-Creation-Date: 2019-06-21 11:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "move-resize-top-half"
+msgstr ""
+
+msgid "move-resize-upper-right"
+msgstr ""
+
+msgid "move-resize-right-half"
+msgstr ""
+
+msgid "move-resize-lower-right"
+msgstr ""
+
+msgid "move-resize-bottom-half"
+msgstr ""
+
+msgid "move-resize-lower-left"
+msgstr ""
+
+msgid "move-resize-left-half"
+msgstr ""
+
+msgid "move-resize-upper-left"
+msgstr ""
+
+msgid "move-center"
+msgstr ""
+
+msgid "resize-fullscreen"
+msgstr ""
+
+msgid "left-display"
+msgstr ""
+
+msgid "right-display"
+msgstr ""
+
+msgid "resize-larger"
+msgstr ""
+
+msgid "resize-smaller"
+msgstr ""
