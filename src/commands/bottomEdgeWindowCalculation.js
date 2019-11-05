@@ -7,7 +7,7 @@
 const WindowActions = spruce.imports.windowActions;
 const WindowTransformHelpers = spruce.imports.windowTransformHelpers;
 
-var name = WindowActions.RIGHT_HALF;
+var name = WindowActions.BOTTOM_EDGE;
 var transform = (
   windowRect,
   visibleFrameOfSourceScreen,
@@ -17,24 +17,24 @@ var transform = (
     visibleFrameOfDestinationScreen
   );
 
-  oneHalfRect.width = Math.floor(oneHalfRect.width / 2.0);
-  oneHalfRect.x += oneHalfRect.width;
+  oneHalfRect.height = Math.floor(oneHalfRect.height / 2.0);
+  oneHalfRect.y += oneHalfRect.height + (visibleFrameOfDestinationScreen.height % 2.0);
 
   if (
     Math.abs(
-      WindowTransformHelpers.getMidY(windowRect) -
-        WindowTransformHelpers.getMidY(oneHalfRect)
+      WindowTransformHelpers.getMidX(windowRect) -
+        WindowTransformHelpers.getMidX(oneHalfRect)
     ) <= 1.0
   ) {
     const twoThirdsRect = WindowTransformHelpers.copyRect(oneHalfRect);
 
-    twoThirdsRect.width = Math.floor(
-      (visibleFrameOfDestinationScreen.width * 2) / 3.0
+    twoThirdsRect.height = Math.floor(
+      (visibleFrameOfDestinationScreen.height * 2) / 3.0
     );
-    twoThirdsRect.x =
-      visibleFrameOfDestinationScreen.x +
-      visibleFrameOfDestinationScreen.width -
-      twoThirdsRect.width;
+    twoThirdsRect.y =
+      visibleFrameOfDestinationScreen.y +
+      visibleFrameOfDestinationScreen.height -
+      twoThirdsRect.height;
 
     if (
       WindowTransformHelpers.rectCenteredWithinRect(oneHalfRect, windowRect)
@@ -47,13 +47,13 @@ var transform = (
     ) {
       const oneThirdRect = WindowTransformHelpers.copyRect(oneHalfRect);
 
-      oneThirdRect.width = Math.floor(
-        visibleFrameOfDestinationScreen.width / 3.0
+      oneThirdRect.height = Math.floor(
+        visibleFrameOfDestinationScreen.height / 3.0
       );
-      oneThirdRect.x =
-        visibleFrameOfDestinationScreen.x +
-        visibleFrameOfDestinationScreen.width -
-        oneThirdRect.width;
+      oneThirdRect.y =
+        visibleFrameOfDestinationScreen.y +
+        visibleFrameOfDestinationScreen.height -
+        oneThirdRect.height;
 
       return oneThirdRect;
     }

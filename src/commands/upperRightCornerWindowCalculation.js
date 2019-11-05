@@ -7,7 +7,7 @@
 const WindowActions = spruce.imports.windowActions;
 const WindowTransformHelpers = spruce.imports.windowTransformHelpers;
 
-var name = WindowActions.UPPER_RIGHT;
+var name = WindowActions.UPPER_RIGHT_CORNER;
 var transform = (
   windowRect,
   visibleFrameOfSourceScreen,

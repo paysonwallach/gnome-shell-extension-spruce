@@ -7,7 +7,7 @@
 const WindowActions = spruce.imports.windowActions;
 const WindowTransformHelpers = spruce.imports.windowTransformHelpers;
 
-var name = WindowActions.BOTTOM_HALF;
+var name = WindowActions.RIGHT_EDGE;
 var transform = (
   windowRect,
   visibleFrameOfSourceScreen,
@@ -17,19 +17,24 @@ var transform = (
     visibleFrameOfDestinationScreen
   );
 
-  oneHalfRect.height = Math.floor(oneHalfRect.height / 2.0);
+  oneHalfRect.width = Math.floor(oneHalfRect.width / 2.0);
+  oneHalfRect.x += oneHalfRect.width;
 
   if (
     Math.abs(
-      WindowTransformHelpers.getMidX(windowRect) -
-        WindowTransformHelpers.getMidX(oneHalfRect)
+      WindowTransformHelpers.getMidY(windowRect) -
+        WindowTransformHelpers.getMidY(oneHalfRect)
     ) <= 1.0
   ) {
     const twoThirdsRect = WindowTransformHelpers.copyRect(oneHalfRect);
 
-    twoThirdsRect.height = Math.floor(
-      (visibleFrameOfDestinationScreen.height * 2) / 3.0
+    twoThirdsRect.width = Math.floor(
+      (visibleFrameOfDestinationScreen.width * 2) / 3.0
     );
+    twoThirdsRect.x =
+      visibleFrameOfDestinationScreen.x +
+      visibleFrameOfDestinationScreen.width -
+      twoThirdsRect.width;
 
     if (
       WindowTransformHelpers.rectCenteredWithinRect(oneHalfRect, windowRect)
@@ -42,9 +47,13 @@ var transform = (
     ) {
       const oneThirdRect = WindowTransformHelpers.copyRect(oneHalfRect);
 
-      oneThirdRect.height = Math.floor(
-        visibleFrameOfDestinationScreen.height / 3.0
+      oneThirdRect.width = Math.floor(
+        visibleFrameOfDestinationScreen.width / 3.0
       );
+      oneThirdRect.x =
+        visibleFrameOfDestinationScreen.x +
+        visibleFrameOfDestinationScreen.width -
+        oneThirdRect.width;
 
       return oneThirdRect;
     }

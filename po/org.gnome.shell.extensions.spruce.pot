@@ -21,28 +21,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "move-resize-top-half"
+msgid "move-resize-top-edge"
 msgstr ""
 
-msgid "move-resize-upper-right"
+msgid "move-resize-right-edge"
 msgstr ""
 
-msgid "move-resize-right-half"
+msgid "move-resize-bottom-edge"
 msgstr ""
 
-msgid "move-resize-lower-right"
+msgid "move-resize-left-edge"
 msgstr ""
 
-msgid "move-resize-bottom-half"
+msgid "move-resize-upper-left-corner"
 msgstr ""
 
-msgid "move-resize-lower-left"
+msgid "move-resize-upper-right-corner"
 msgstr ""
 
-msgid "move-resize-left-half"
+msgid "move-resize-lower-right-corner"
 msgstr ""
 
-msgid "move-resize-upper-left"
+msgid "move-resize-lower-left-corner"
 msgstr ""
 
 msgid "move-center"
@@ -51,10 +51,16 @@ msgstr ""
 msgid "resize-fullscreen"
 msgstr ""
 
-msgid "left-display"
+msgid "move-resize-next-third"
 msgstr ""
 
-msgid "right-display"
+msgid "move-resize-previous-third"
+msgstr ""
+
+msgid "move-next-display"
+msgstr ""
+
+msgid "move-previous-display"
 msgstr ""
 
 msgid "resize-larger"
