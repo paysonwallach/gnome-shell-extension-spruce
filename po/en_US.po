@@ -1,7 +1,7 @@
 #
 # Spruce
 #
-# Copyright (c) 2019 Payson Wallach
+# Copyright 2019 Payson Wallach
 #
 # Released under the terms of the GNU General Public License, version 3
 # (https://gnu.org/licenses/gpl.html)
@@ -19,29 +19,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "move-resize-top-half"
-msgstr "Top half"
+msgid "move-resize-top-edge"
+msgstr "Top"
 
-msgid "move-resize-upper-right"
-msgstr "Top right"
+msgid "move-resize-right-edge"
+msgstr "Right"
 
-msgid "move-resize-right-half"
-msgstr "Right half"
+msgid "move-resize-bottom-edge"
+msgstr "Bottom"
 
-msgid "move-resize-lower-right"
-msgstr "Bottom right"
+msgid "move-resize-left-edge"
+msgstr "Left"
 
-msgid "move-resize-bottom-half"
-msgstr "Bottom half"
+msgid "move-resize-upper-left-corner"
+msgstr "Upper left"
 
-msgid "move-resize-lower-left"
-msgstr "Bottom left"
+msgid "move-resize-upper-right-corner"
+msgstr "Upper right"
 
-msgid "move-resize-left-half"
-msgstr "Left half"
+msgid "move-resize-lower-right-corner"
+msgstr "Lower right"
 
-msgid "move-resize-upper-left"
-msgstr "Top left"
+msgid "move-resize-lower-left-corner"
+msgstr "Lower left"
 
 msgid "move-center"
 msgstr "Center"
@@ -55,14 +55,14 @@ msgstr "Next third"
 msgid "move-resize-previous-third"
 msgstr "Previous third"
 
-msgid "resize-larger"
-msgstr "Larger"
-
-msgid "resize-smaller"
-msgstr "Smaller"
-
 msgid "move-next-display"
 msgstr "Next display"
 
 msgid "move-previous-display"
 msgstr "Previous display"
+
+msgid "resize-larger"
+msgstr "Larger"
+
+msgid "resize-smaller"
+msgstr "Smaller"

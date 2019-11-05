@@ -7,7 +7,7 @@
 const WindowActions = spruce.imports.windowActions;
 const WindowTransformHelpers = spruce.imports.windowTransformHelpers;
 
-var name = WindowActions.UPPER_RIGHT;
+var name = WindowActions.LOWER_LEFT_CORNER;
 var transform = (
   windowRect,
   visibleFrameOfSourceScreen,
@@ -23,7 +23,10 @@ var transform = (
   oneQuarterRect.height = Math.floor(
     visibleFrameOfDestinationScreen.height / 2.0
   );
-  oneQuarterRect.x += oneQuarterRect.width;
+  oneQuarterRect.y =
+    visibleFrameOfDestinationScreen.y +
+    Math.floor(visibleFrameOfDestinationScreen.height / 2.0) +
+    (visibleFrameOfDestinationScreen.height % 2.0);
 
   if (
     Math.abs(
@@ -36,10 +39,6 @@ var transform = (
     twoThirdsRect.width = Math.floor(
       (visibleFrameOfDestinationScreen.width * 2) / 3.0
     );
-    twoThirdsRect.x =
-      visibleFrameOfDestinationScreen.x +
-      visibleFrameOfDestinationScreen.width -
-      twoThirdsRect.width;
 
     if (
       WindowTransformHelpers.rectCenteredWithinRect(oneQuarterRect, windowRect)
@@ -55,10 +54,6 @@ var transform = (
       oneThirdRect.width = Math.floor(
         visibleFrameOfDestinationScreen.width / 3.0
       );
-      oneThirdRect.x =
-        visibleFrameOfDestinationScreen.x +
-        visibleFrameOfDestinationScreen.width -
-        oneThirdRect.width;
 
       return oneThirdRect;
     }

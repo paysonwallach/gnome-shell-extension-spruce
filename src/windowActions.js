@@ -11,22 +11,22 @@ const WindowResizer = spruce.imports.windowResizer;
 var UNDO = "WindowActionUndo";
 var REDO = "WindowActionRedo";
 */
-var BOTTOM_HALF = "move-resize-bottom-half";
 var CENTER = "move-center";
 var FULLSCREEN = "resize-fullscreen";
-var LARGER = "resize-larger";
-var LEFT_HALF = "move-resize-left-half";
-var LOWER_LEFT = "move-resize-lower-left";
-var LOWER_RIGHT = "move-resize-lower-right";
-var NEXT_DISPLAY = "move-next-display";
+var TOP_EDGE = "move-resize-top-edge";
+var RIGHT_EDGE = "move-resize-right-edge";
+var BOTTOM_EDGE = "move-resize-bottom-edge";
+var LEFT_EDGE = "move-resize-left-edge";
+var UPPER_LEFT_CORNER = "move-resize-upper-left-corner";
+var UPPER_RIGHT_CORNER = "move-resize-upper-right-corner";
+var LOWER_RIGHT_CORNER = "move-resize-lower-right-corner";
+var LOWER_LEFT_CORNER = "move-resize-lower-left-corner";
 var NEXT_THIRD = "move-resize-next-third";
-var PREVIOUS_DISPLAY = "move-previous-display";
 var PREVIOUS_THIRD = "move-resize-previous-third";
-var RIGHT_HALF = "move-resize-right-half";
+var NEXT_DISPLAY = "move-next-display";
+var PREVIOUS_DISPLAY = "move-previous-display";
+var LARGER = "resize-larger";
 var SMALLER = "resize-smaller";
-var TOP_HALF = "move-resize-top-half";
-var UPPER_LEFT = "move-resize-upper-left";
-var UPPER_RIGHT = "move-resize-upper-right";
 
 var isNextScreenWindowAction = action => {
   return action.name === NEXT_DISPLAY;

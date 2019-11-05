@@ -1,58 +1,58 @@
 <schemalist>
   <schema id="org.gnome.shell.extensions.spruce" path="/org/gnome/shell/extensions/spruce/">
-    <key type="as" name="move-resize-top-half">
+    <key name="move-resize-top-edge" type="as">
       <default>
-        <![CDATA[['<Ctrl><Alt>Up']]]>
+        <![CDATA[['<Super><Ctrl>Up']]]>
       </default>
-      <summary>Key to move the active window to fill the top half of the screen</summary>
+      <summary>Tile window against the top edge of the screen</summary>
     </key>
-    <key type="as" name="move-resize-upper-right">
+    <key name="move-resize-right-edge" type="as">
       <default>
-        <![CDATA[['<Alt><Super>Right']]]>
+        <![CDATA[['<Super><Ctrl>Right']]]>
       </default>
-      <summary>Key to move the active window to fill the top-right quarter of the screen</summary>
+      <summary>Tile window against the right edge of the screen</summary>
     </key>
-    <key type="as" name="move-resize-right-half">
+    <key type="as" name="move-resize-bottom-edge">
       <default>
-        <![CDATA[['<Ctrl><Alt>Right']]]>
+        <![CDATA[['<Super><Ctrl>Down']]]>
       </default>
-      <summary>Key to move the active window to fill the right half of the screen</summary>
+      <summary>Tile window against the bottom edge of the screen</summary>
     </key>
-    <key type="as" name="move-resize-lower-right">
+    <key type="as" name="move-resize-left-edge">
       <default>
-        <![CDATA[['<Shift><Alt><Super>Right']]]>
+        <![CDATA[['<Super><Ctrl>Left']]]>
       </default>
-      <summary>Key to move the active window to fill the bottom-right quarter of the screen</summary>
+      <summary>Tile window against the left edge of the screen</summary>
     </key>
-    <key type="as" name="move-resize-bottom-half">
+    <key type="as" name="move-resize-upper-left-corner">
       <default>
-        <![CDATA[['<Ctrl><Alt>Down']]]>
+        <![CDATA[['<Shift><Super><Ctrl>Up']]]>
       </default>
-      <summary>Key to move the active window to fill the bottom half of the screen</summary>
+      <summary>Tile window against the top-left corner of the screen</summary>
     </key>
-    <key type="as" name="move-resize-lower-left">
+    <key type="as" name="move-resize-upper-right-corner">
       <default>
-        <![CDATA[['<Shift><Alt><Super>Left']]]>
+        <![CDATA[['<Shift><Super><Ctrl>Right']]]>
       </default>
-      <summary>Key to move the active window to fill the bottom-left quarter of the screen</summary>
+      <summary>Tile window against the top-right corner of the screen</summary>
     </key>
-    <key type="as" name="move-resize-left-half">
+    <key type="as" name="move-resize-lower-right-corner">
       <default>
-        <![CDATA[['<Ctrl><Alt>Left']]]>
+        <![CDATA[['<Shift><Super><Ctrl>Down']]]>
       </default>
-      <summary>Key to move the active window to fill the left half of the screen</summary>
+      <summary>Tile window against the bottom-right corner of the screen</summary>
     </key>
-    <key type="as" name="move-resize-upper-left">
+    <key type="as" name="move-resize-lower-left-corner">
       <default>
-        <![CDATA[['<Alt><Super>Left']]]>
+        <![CDATA[['<Shift><Super><Ctrl>Left']]]>
       </default>
-      <summary>Key to move the active window to fill the top-left quarter of the screen</summary>
+      <summary>Tile window against the bottom-left corner of the screen</summary>
     </key>
     <key type="as" name="move-center">
       <default>
         <![CDATA[['<Ctrl><Alt>C']]]>
       </default>
-      <summary>Key to move the active window to the center of the screen</summary>
+      <summary>Tile window to the center of the screen</summary>
     </key>
     <key type="as" name="resize-fullscreen">
       <default>
@@ -60,41 +60,41 @@
       </default>
       <summary>Key to maximize the active window</summary>
     </key>
-    <key type="as" name="move-previous-display">
-      <default>
-        <![CDATA[['<Shift><Ctrl><Alt>Left']]]>
-      </default>
-      <summary>Key to move the active window to the display left of the active display</summary>
-    </key>
-    <key type="as" name="move-next-display">
-      <default>
-        <![CDATA[['<Shift><Ctrl><Alt>Right']]]>
-      </default>
-      <summary>Key to move the active window to the display right of the active display</summary>
-    </key>
     <key type="as" name="move-resize-next-third">
       <default>
-        <![CDATA[['<Ctrl><Super>Left']]]>
+        <![CDATA[['<Super><Alt><Ctrl>Right']]]>
       </default>
-      <summary>Key to move the active window to the next third portion of the screen</summary>
+      <summary>Tile window to the next third portion of the screen</summary>
     </key>
     <key type="as" name="move-resize-previous-third">
       <default>
-        <![CDATA[['<Ctrl><Super>Right']]]>
+        <![CDATA[['<Super><Alt><Ctrl>Left']]]>
       </default>
-      <summary>Key to move the active window to the previous third portion of the screen</summary>
+      <summary>Tile window to the previous third portion of the screen</summary>
+    </key>
+    <key type="as" name="move-next-display">
+      <default>
+        <![CDATA[['<Shift><Super><Ctrl>Right']]]>
+      </default>
+      <summary>Tile window to the display right of the active display</summary>
+    </key>
+    <key type="as" name="move-previous-display">
+      <default>
+        <![CDATA[['<Shift><Super><Ctrl>Left']]]>
+      </default>
+      <summary>Tile window to the display left of the active display</summary>
     </key>
     <key type="as" name="resize-larger">
       <default>
-        <![CDATA[['<Ctrl><Alt><Super>Up']]]>
+        <![CDATA[['<Super><Alt><Ctrl>Up']]]>
       </default>
-      <summary>Key to increase the size of the active window</summary>
+      <summary>Increase window size</summary>
     </key>
     <key type="as" name="resize-smaller">
       <default>
-        <![CDATA[['<Ctrl><Alt><Super>Down']]]>
+        <![CDATA[['<Super><Alt><Ctrl>Down']]]>
       </default>
-      <summary>Key to decrease the size of the active window</summary>
+      <summary>Decrease window size</summary>
     </key>
   </schema>
 </schemalist>
