@@ -1,7 +1,7 @@
 /*
  * Spruce
  *
- * Copyright (c) 2019 Payson Wallach
+ * Copyright 2019 Payson Wallach
  *
  * Released under the terms of the GNU General Public License, version 3
  * (https://gnu.org/licenses/gpl.html)
