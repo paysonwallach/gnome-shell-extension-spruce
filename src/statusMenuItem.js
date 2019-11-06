@@ -45,7 +45,7 @@ var StatusMenuItem = class StatusMenuItem {
     });
 
     this.button = new PanelMenu.Button(0, spruce.metadata["name"], false);
-    this.button.accessible_role = Atk.Role.TOGGLE_BUTTON;
+    this.button.accessible_role = Atk.Role.MENU;
 
     this.button.add_child(icon);
     this.button.add_style_class_name("panel-status-button");
