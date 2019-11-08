@@ -1,6 +1,7 @@
 project('spruce', 'c', version: '3', meson_version: '>= 0.45.0')
 
 gnome = import('gnome')
+i18n = import('i18n')
 
 prefix = get_option('prefix')
 data_dir = join_paths(prefix, get_option('datadir'))
