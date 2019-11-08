@@ -39,10 +39,12 @@ Install with `ninja`.
 ninja -C build install
 ```
 
+## Loading the extension
+
 Restart GNOME shell.
 
--   **X11/Xorg:** <kbd>Alt</kbd> + <kbd>F2</kbd> + `restart` or `r`
--   **Wayland:** Log out and log back in
+- **X11/Xorg:** <kbd>Alt</kbd> + <kbd>F2</kbd> + `restart` or `r`
+- **Wayland:** Log out and log back in
 
 Enable the extension with [GNOME Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks) or `gnome-extensions`.
 
