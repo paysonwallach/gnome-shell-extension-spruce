@@ -19,18 +19,35 @@
 
 ## Installation
 
-### From source using `meson`
+### From source using [`meson`](http://mesonbuild.com/)
 
-Clone this repository and configure the build directory at the root of the project:
+Clone this repository or download the [latest release](https://github.com/paysonwallach/spruce/releases/latest).
 
+```sh
+git clone https://github.com/paysonwallach/spruce.git
 ```
-meson build
+
+Configure the build directory at the root of the project.
+
+```sh
+meson --prefix=$HOME/.local build
 ```
 
-Then install with `ninja`:
+Install with `ninja`.
 
-```
+```sh
 ninja -C build install
+```
+
+Restart GNOME shell.
+
+-   **X11/Xorg:** <kbd>Alt</kbd> + <kbd>F2</kbd> + `restart` or `r`
+-   **Wayland:** Log out and log back in
+
+Enable the extension with [GNOME Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks) or `gnome-extensions`.
+
+```sh
+gnome-extensions enable spruce@paysonwallach.com
 ```
 
 ## Contributing
