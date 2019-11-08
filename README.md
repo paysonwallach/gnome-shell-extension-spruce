@@ -60,4 +60,4 @@ By participating in this project, you agree to abide by the terms of the [Code o
 
 ## License
 
-[Spruce](https://github.com/paysonwallach/spruce) is licensed under the [GNU Public License version 3](https://github.com/paysonwallach/spruce/blob/master/LICENSE).
+[Spruce](https://github.com/paysonwallach/spruce) is licensed under the [GNU Public License v3.0](https://github.com/paysonwallach/spruce/blob/master/LICENSE).
