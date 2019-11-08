@@ -2,7 +2,7 @@
   <h1>Spruce</h1>
   <p>Arrange windows from the comfort of your keyboard</p>
   <a href=https://github.com/paysonwallach/spruce/release/latest>
-    <img src=https://img.shields.io/github/v/tag/paysonwallach/spruce?style=flat-square>
+    <img src=https://img.shields.io/github/v/release/paysonwallach/spruce?style=flat-square>
   </a>
   <a href=https://github.com/paysonwallach/spruce/blob/master/LICENSE>
     <img src=https://img.shields.io/github/license/paysonwallach/spruce?style=flat-square>
