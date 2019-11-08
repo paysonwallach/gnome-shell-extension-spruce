@@ -1,4 +1,4 @@
-project('spruce', 'c', version: '3', meson_version: '>= 0.45.0')
+project('spruce', version: '3', meson_version: '>= 0.50.0')
 
 gnome = import('gnome')
 i18n = import('i18n')
