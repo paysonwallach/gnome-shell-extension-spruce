@@ -2,95 +2,95 @@
   <schema id="org.gnome.shell.extensions.spruce" path="/org/gnome/shell/extensions/spruce/">
     <key name="move-resize-top-edge" type="as">
       <default>
-        <![CDATA[['<Super><Ctrl>Up']]]>
+        <![CDATA[['<Ctrl><Super>Up']]]>
       </default>
       <summary>Tile window against the top edge of the screen</summary>
     </key>
     <key name="move-resize-right-edge" type="as">
       <default>
-        <![CDATA[['<Super><Ctrl>Right']]]>
+        <![CDATA[['<Ctrl><Super>Right']]]>
       </default>
       <summary>Tile window against the right edge of the screen</summary>
     </key>
-    <key type="as" name="move-resize-bottom-edge">
+    <key name="move-resize-bottom-edge" type="as">
       <default>
-        <![CDATA[['<Super><Ctrl>Down']]]>
+        <![CDATA[['<Ctrl><Super>Down']]]>
       </default>
       <summary>Tile window against the bottom edge of the screen</summary>
     </key>
-    <key type="as" name="move-resize-left-edge">
+    <key name="move-resize-left-edge" type="as">
       <default>
-        <![CDATA[['<Super><Ctrl>Left']]]>
+        <![CDATA[['<Ctrl><Super>Left']]]>
       </default>
       <summary>Tile window against the left edge of the screen</summary>
     </key>
-    <key type="as" name="move-resize-upper-left-corner">
+    <key name="move-resize-upper-left-corner" type="as">
       <default>
-        <![CDATA[['<Shift><Super><Ctrl>Up']]]>
+        <![CDATA[['<Shift><Ctrl><Super>Up']]]>
       </default>
       <summary>Tile window against the top-left corner of the screen</summary>
     </key>
-    <key type="as" name="move-resize-upper-right-corner">
+    <key name="move-resize-upper-right-corner" type="as">
       <default>
-        <![CDATA[['<Shift><Super><Ctrl>Right']]]>
+        <![CDATA[['<Shift><Ctrl><Super>Right']]]>
       </default>
       <summary>Tile window against the top-right corner of the screen</summary>
     </key>
-    <key type="as" name="move-resize-lower-right-corner">
+    <key name="move-resize-lower-right-corner" type="as">
       <default>
-        <![CDATA[['<Shift><Super><Ctrl>Down']]]>
+        <![CDATA[['<Shift><Ctrl><Super>Down']]]>
       </default>
       <summary>Tile window against the bottom-right corner of the screen</summary>
     </key>
-    <key type="as" name="move-resize-lower-left-corner">
+    <key name="move-resize-lower-left-corner" type="as">
       <default>
-        <![CDATA[['<Shift><Super><Ctrl>Left']]]>
+        <![CDATA[['<Shift><Ctrl><Super>Left']]]>
       </default>
       <summary>Tile window against the bottom-left corner of the screen</summary>
     </key>
-    <key type="as" name="move-center">
+    <key name="move-center" type="as">
       <default>
         <![CDATA[['<Ctrl><Alt>C']]]>
       </default>
       <summary>Tile window to the center of the screen</summary>
     </key>
-    <key type="as" name="resize-fullscreen">
+    <key name="resize-fullscreen" type="as">
       <default>
         <![CDATA[['<Ctrl><Alt>F']]]>
       </default>
       <summary>Key to maximize the active window</summary>
     </key>
-    <key type="as" name="move-resize-next-third">
+    <key name="move-resize-next-third" type="as">
       <default>
-        <![CDATA[['<Super><Alt><Ctrl>Right']]]>
+        <![CDATA[['<Ctrl><Alt><Super>Right']]]>
       </default>
       <summary>Tile window to the next third portion of the screen</summary>
     </key>
-    <key type="as" name="move-resize-previous-third">
+    <key name="move-resize-previous-third" type="as">
       <default>
-        <![CDATA[['<Super><Alt><Ctrl>Left']]]>
+        <![CDATA[['<Ctrl><Alt><Super>Left']]]>
       </default>
       <summary>Tile window to the previous third portion of the screen</summary>
     </key>
-    <key type="as" name="move-next-display">
+    <key name="move-next-display" type="as">
       <default>
         <![CDATA[['<Shift><Super><Ctrl>Right']]]>
       </default>
       <summary>Tile window to the display right of the active display</summary>
     </key>
-    <key type="as" name="move-previous-display">
+    <key name="move-previous-display" type="as">
       <default>
         <![CDATA[['<Shift><Super><Ctrl>Left']]]>
       </default>
       <summary>Tile window to the display left of the active display</summary>
     </key>
-    <key type="as" name="resize-larger">
+    <key name="resize-larger" type="as">
       <default>
         <![CDATA[['<Super><Alt><Ctrl>Up']]]>
       </default>
       <summary>Increase window size</summary>
     </key>
-    <key type="as" name="resize-smaller">
+    <key name="resize-smaller" type="as">
       <default>
         <![CDATA[['<Super><Alt><Ctrl>Down']]]>
       </default>
