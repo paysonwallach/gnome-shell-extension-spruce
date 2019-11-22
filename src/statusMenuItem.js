@@ -77,6 +77,9 @@ var StatusMenuItem = class StatusMenuItem {
       WindowActions.LARGER,
       WindowActions.SMALLER
     ];
+    const settings = new Gio.Settings({
+      schema: spruce.metadata["settings-schema"]
+    });
 
     for (const item of menuItems) {
       let menuItem;
@@ -86,6 +89,10 @@ var StatusMenuItem = class StatusMenuItem {
       } else {
         const action = commands.filter(command => command.name === item)[0];
         const handler = moveFocusedWindow.bind(this, action);
+        const keybinding = settings.get_value(action.name);
+        const valueLabelBin = new St.Bin({
+          x_align: St.Align.END
+        });
 
         Main.wm.addKeybinding(
           action.name,
@@ -96,6 +103,22 @@ var StatusMenuItem = class StatusMenuItem {
         );
 
         menuItem = new PopupMenu.PopupMenuItem(_(action.name));
+
+        let value = keybinding.recursiveUnpack()["0"]
+          .replace(/<Control>|<Ctrl>/g, "⌃")
+          .replace(/<Alt>/g, "⎇")
+          .replace(/<Super>/g, "◆")
+          .replace(/<Shift>/g, "⇧")
+          .replace(/Left/g, "←")
+          .replace(/Up/g, "↑")
+          .replace(/Right/g, "→")
+          .replace(/Down/g, "↓");
+        let valueLabel = new St.Label({
+          text: value
+        });
+
+        valueLabelBin.child = valueLabel;
+        menuItem.add(valueLabelBin, { expand: true, x_align: St.Align.END });
         menuItem.connect("activate", handler);
       }
 
