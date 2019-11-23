@@ -19,7 +19,7 @@ const PopupMenu = imports.ui.popupMenu;
 
 const Util = imports.misc.util;
 
-const Gettext = imports.gettext.domain(spruce.metadata["gettext-domain"]);
+const Gettext = imports.gettext.domain();
 const _ = Gettext.gettext;
 
 const Commands = spruce.imports.commands;
