@@ -1,11 +1,10 @@
 #
 # Spruce
 #
-# Copyright (c) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (c) 2019 Payson Wallach
 #
 # Released under the terms of the GNU General Public License, version 3
 # (https://gnu.org/licenses/gpl.html)
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 
