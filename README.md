@@ -3,7 +3,7 @@
   <img alt="screenshot" src=https://raw.githubusercontent.com/paysonwallach/spruce/master/screenshots/spruce.gif>
   <br>
   <br>
-  <p>Arrange windows from the comfort of your keyboard</p>
+  <p>Easily arrange windows from the comfort of your keyboard.</p>
   <a href=https://github.com/paysonwallach/spruce/release/latest>
     <img src=https://img.shields.io/badge/version-5-red?style=flat-square>
   </a>
@@ -21,9 +21,9 @@
 
 ## Installation
 
-### [GNOME Shell Extensions](https://extensions.gnome.org/) (Preferred)
+### From GNOME Shell Extensions (preferred)
 
-[Spruce](https://github.com/paysonwallach/spruce) is available via [GNOME Shell Extensions](https://extensions.gnome.org/extension/2368/spruce/).
+[Spruce](https://github.com/paysonwallach/spruce) is available on [GNOME Shell Extensions](https://extensions.gnome.org/extension/2368/spruce/).
 
 ### From source using [`meson`](http://mesonbuild.com/)
 
