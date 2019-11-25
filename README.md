@@ -2,9 +2,10 @@
   <h1>Spruce</h1>
   <img alt="screenshot" src=https://raw.githubusercontent.com/paysonwallach/spruce/master/screenshots/spruce.gif>
   <br>
+  <br>
   <p>Arrange windows from the comfort of your keyboard</p>
   <a href=https://github.com/paysonwallach/spruce/release/latest>
-    <img src=https://img.shields.io/github/v/release/paysonwallach/spruce?style=flat-square>
+    <img src=https://img.shields.io/badge/version-5-red?style=flat-square>
   </a>
   <a href=https://github.com/paysonwallach/spruce/blob/master/LICENSE>
     <img src=https://img.shields.io/github/license/paysonwallach/spruce?style=flat-square>
@@ -12,7 +13,6 @@
   <a href=https://buymeacoffee.com/paysonwallach>
     <img src=https://img.shields.io/badge/donate-Buy%20me%20a%20coffe-yellow?style=flat-square>
   </a>
-  <br>
   <br>
   <br>
 </div>
