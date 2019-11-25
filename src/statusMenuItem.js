@@ -104,7 +104,9 @@ var StatusMenuItem = class StatusMenuItem {
 
         menuItem = new PopupMenu.PopupMenuItem(_(action.name));
 
-        let value = keybinding.recursiveUnpack()["0"]
+        // get first accelerator from keybinding values
+        let accelLabelText = keybinding.get_child_value(0)
+          .get_string()[0]
           .replace(/<Control>|<Ctrl>/g, "⌃")
           .replace(/<Alt>/g, "⎇")
           .replace(/<Super>/g, "◆")
