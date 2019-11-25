@@ -17,6 +17,7 @@ const Main = imports.ui.main;
 const PanelMenu = imports.ui.panelMenu;
 const PopupMenu = imports.ui.popupMenu;
 
+const Config = imports.misc.config;
 const Util = imports.misc.util;
 
 const Gettext = imports.gettext.domain();
@@ -90,9 +91,8 @@ var StatusMenuItem = class StatusMenuItem {
         const action = commands.filter(command => command.name === item)[0];
         const handler = moveFocusedWindow.bind(this, action);
         const keybinding = settings.get_value(action.name);
-        const valueLabelBin = new St.Bin({
-          x_align: St.Align.END
-        });
+        const accelLabelBinConfig = { x_align: St.Align.END };
+        const accelLabelBin = new St.Bin(accelLabelBinConfig);
 
         Main.wm.addKeybinding(
           action.name,
@@ -113,12 +113,20 @@ var StatusMenuItem = class StatusMenuItem {
           .replace(/Up/g, "↑")
           .replace(/Right/g, "→")
           .replace(/Down/g, "↓");
-        let valueLabel = new St.Label({
-          text: value
+
+        const accelLabel = new St.Label({
+          text: accelLabelText
         });
 
-        valueLabelBin.child = valueLabel;
-        menuItem.add(valueLabelBin, { expand: true, x_align: St.Align.END });
+        accelLabelBin.child = accelLabel;
+        accelLabelBinConfig.expand = true;
+
+        if (Config.PACKAGE_VERSION.startsWith("3.34")) {
+          menuItem.add(accelLabelBin, accelLabelBinConfig);
+        } else {
+          menuItem.actor.add(accelLabelBin, accelLabelBinConfig);
+        }
+
         menuItem.connect("activate", handler);
       }
 
