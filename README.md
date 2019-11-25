@@ -1,5 +1,7 @@
 <div align="center">
   <h1>Spruce</h1>
+  <img alt="screenshot" src=https://raw.githubusercontent.com/paysonwallach/spruce/master/screenshots/spruce.gif>
+  <br>
   <p>Arrange windows from the comfort of your keyboard</p>
   <a href=https://github.com/paysonwallach/spruce/release/latest>
     <img src=https://img.shields.io/github/v/release/paysonwallach/spruce?style=flat-square>
