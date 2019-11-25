@@ -19,6 +19,10 @@
 
 ## Installation
 
+### [GNOME Shell Extensions](https://extensions.gnome.org/) (Preferred)
+
+[Spruce](https://github.com/paysonwallach/spruce) is available via [GNOME Shell Extensions](https://extensions.gnome.org/extension/2368/spruce/).
+
 ### From source using [`meson`](http://mesonbuild.com/)
 
 Clone this repository or download the [latest release](https://github.com/paysonwallach/spruce/releases/latest).
@@ -41,7 +45,7 @@ ninja -C build install
 
 ## Loading the extension
 
-Restart GNOME shell.
+Restart GNOME Shell.
 
 - **X11/Xorg:** <kbd>Alt</kbd> + <kbd>F2</kbd> + `restart` or `r`
 - **Wayland:** Log out and log back in
