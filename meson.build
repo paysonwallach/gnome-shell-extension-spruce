@@ -4,19 +4,13 @@ gnome = import('gnome')
 i18n = import('i18n')
 
 prefix = get_option('prefix')
-data_dir = join_paths(prefix, get_option('datadir'))
+data_dir = join_paths(prefix, get_option('data_dir'))
 
 app_id = 'org.gnome.shell.extensions.spruce'
 ext_uuid = 'spruce@paysonwallach.com'
 ext_data_dir = join_paths(data_dir, 'gnome-shell', 'extensions', ext_uuid)
-locale_dir = join_paths(ext_data_dir,'locale')
-
-# gsettings schema dir
-if get_option('gsettings_schemadir') != ''
-  gschema_dir = get_option('gsettings_schemadir')
-else
-  gschema_dir = join_paths(data_dir, 'glib-2.0', 'schemas')
-endif
+locale_dir = join_paths(ext_data_dir, 'locale')
+gschema_dir = join_paths(ext_data_dir, 'schemas')
 
 # configuration
 ext_config = configuration_data()
@@ -26,6 +20,12 @@ ext_config.set('UUID', ext_uuid)
 ext_config.set('LOCALE_DIR', locale_dir)
 ext_config.set('EXT_DATA_DIR', ext_data_dir)
 ext_config.set('GSCHEMA_DIR', gschema_dir)
+
+# gsettings
+install_data(
+  join_paths('data', app_id) + '.gschema.xml',
+  install_dir: gschema_dir
+)
 
 # ZIP targets for user extension builds
 run_target(
@@ -65,12 +65,6 @@ configure_file(
   output: 'metadata.json',
   configuration: ext_config,
   install_dir: ext_data_dir
-)
-
-# gsettings
-install_data(
-  join_paths('data', app_id) + '.gschema.xml',
-  install_dir: gschema_dir
 )
 
 # gresources
