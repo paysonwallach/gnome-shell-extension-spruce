@@ -4,7 +4,7 @@ gnome = import('gnome')
 i18n = import('i18n')
 
 prefix = get_option('prefix')
-data_dir = join_paths(prefix, get_option('data_dir'))
+data_dir = join_paths(prefix, get_option('datadir'))
 
 app_id = 'org.gnome.shell.extensions.spruce'
 ext_uuid = 'spruce@paysonwallach.com'
