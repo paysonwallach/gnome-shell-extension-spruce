@@ -40,10 +40,8 @@ class ScreenDetectionResult {
 }
 
 function nextOrPreviousScreen(action, screen, screens) {
-  let result = 0;
-
   if (screens.length <= 1) {
-    return result;
+    return 0;
   }
 
   for (let i = 0; i < screens.length; i++) {
@@ -61,12 +59,8 @@ function nextOrPreviousScreen(action, screen, screens) {
       nextOrPreviousIndex = 0;
     }
 
-    result = screens[nextOrPreviousIndex];
-
-    break;
+    return screens[nextOrPreviousIndex];
   }
-
-  return result;
 }
 
 function screenWithAction(action, sourceScreen, screens) {
