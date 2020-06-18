@@ -21,35 +21,29 @@ ext_config.set('LOCALE_DIR', locale_dir)
 ext_config.set('EXT_DATA_DIR', ext_data_dir)
 ext_config.set('GSCHEMA_DIR', gschema_dir)
 
-# gsettings
-install_data(
-  join_paths('data', app_id) + '.gschema.xml',
-  install_dir: gschema_dir
-)
-
 # ZIP targets for user extension builds
 run_target(
-    'make-zip',
-    command: [
-        find_program('env'),
-        'UUID=' + ext_uuid,
-        'DATADIR=' + data_dir,
-        'LOCALEDIR=' + locale_dir,
-        'GSCHEMADIR=' + gschema_dir,
-        join_paths('meson', 'package.sh')
-    ]
+  'make-zip',
+  command: [
+    find_program('env'),
+    'UUID=' + ext_uuid,
+    'DATADIR=' + data_dir,
+    'LOCALEDIR=' + locale_dir,
+    'GSCHEMADIR=' + gschema_dir,
+    join_paths('meson', 'package.sh')
+  ]
 )
 run_target(
-    'install-zip',
-    command: [
-        find_program('env'),
-        'UUID=' + ext_uuid,
-        'DATADIR=' + data_dir,
-        'LOCALEDIR=' + locale_dir,
-        'GSCHEMADIR=' + gschema_dir,
-        'INSTALL=true',
-        join_paths('meson', 'package.sh')
-    ]
+  'install-zip',
+  command: [
+    find_program('env'),
+    'UUID=' + ext_uuid,
+    'DATADIR=' + data_dir,
+    'LOCALEDIR=' + locale_dir,
+    'GSCHEMADIR=' + gschema_dir,
+    'INSTALL=true',
+    join_paths('meson', 'package.sh')
+  ]
 )
 
 # extension source
@@ -65,6 +59,12 @@ configure_file(
   output: 'metadata.json',
   configuration: ext_config,
   install_dir: ext_data_dir
+)
+
+# gsettings
+install_data(
+  join_paths('data', app_id) + '.gschema.xml',
+  install_dir: gschema_dir
 )
 
 # gresources
